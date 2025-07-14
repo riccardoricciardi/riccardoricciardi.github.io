@@ -1,3 +1,18 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #1a1a1a;
+    background: #f4f8fb;
+}
+
+.background {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+                url('background_img.jpeg') no-repeat center center/cover;
+    z-index: -1;
+}
+
 nav {
     background-color: #083d77;
     display: flex;
@@ -44,4 +59,40 @@ nav {
 
 .nav-right {
     text-align: right;
+}
+
+
+.content {
+    display: none;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #083d77;
+}
+
+a {
+    color: #0a66c2;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #dceaf5;
 }
