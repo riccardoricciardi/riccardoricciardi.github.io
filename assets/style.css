@@ -16,18 +16,32 @@ body {
 nav {
     background-color: #083d77;
     display: flex;
-    justify-content: center;
-    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
     position: sticky;
     top: 0;
+    flex-wrap: wrap;
+}
+
+.nav-left {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.nav-right {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 25px;
 }
 
 nav ul li {
