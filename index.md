@@ -8,7 +8,7 @@ title: Riccardo Ricciardi
 ## About & Contacts
 Researcher specializing in statistical modeling and Natural Language Processing (NLP), with experience ranging from causal inference to deep learning models.  
 📧 Email: your.email@example.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/yourprofile)  
+🔗 [LinkedIn]([https://www.linkedin.com/in/yourprofile](https://www.linkedin.com/in/riccardo-ricciardi/))  
 📄 [Full Academic CV](curriculum-esteso.pdf) | [Short CV](curriculum-breve.pdf)
 
 ---
