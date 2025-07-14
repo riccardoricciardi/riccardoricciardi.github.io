@@ -27,40 +27,38 @@ nav {
 .nav-left, .nav-right {
     color: white;
     font-weight: 700;
-    font-size: 26px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    flex: 1;
 }
 
 .nav-left {
-    flex: 1;
     text-align: left;
 }
 
-.nav-right {
-    flex: 1;
-    text-align: right;
-}
-
-nav ul {
-    list-style: none;
+.nav-center {
     display: flex;
+    list-style: none;
     gap: 25px;
     margin: 0;
     padding: 0;
-    justify-content: center;
     flex: 2;
+    justify-content: center;
 }
 
-nav ul li {
-    cursor: pointer;
+.nav-center li {
     color: white;
+    cursor: pointer;
     font-weight: 600;
     font-size: 18px;
     transition: opacity 0.3s;
 }
 
-nav ul li:hover {
+.nav-center li:hover {
     opacity: 0.7;
+}
+
+.nav-right {
+    text-align: right;
 }
 
 .content {
