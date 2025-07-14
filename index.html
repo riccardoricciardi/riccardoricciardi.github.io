@@ -11,6 +11,7 @@
     <div class="background"></div>
 
     <nav>
+        <div class="nav-left">Riccardo Ricciardi</div>
         <ul>
             <li onclick="showSection('about')">About & Contacts</li>
             <li onclick="showSection('roles')">Roles</li>
@@ -18,10 +19,11 @@
             <li onclick="showSection('papers')">Selected Papers</li>
             <li onclick="showSection('interests')">Personal Interests</li>
         </ul>
+        <div class="nav-right">Statistics & Data Science</div>
     </nav>
 
     <section id="about" class="content">
-        <h1>Riccardo Ricciardi</h1>
+        <h2>About & Contacts</h2>
         <p>Researcher specializing in statistical modeling and NLP, from causal inference to deep learning.</p>
         <p>📧 Email: your.email@example.com</p>
         <p>🔗 <a href="https://www.linkedin.com/in/riccardo-ricciardi/">LinkedIn</a></p>
@@ -72,7 +74,7 @@
             document.querySelectorAll('.content').forEach(section => section.style.display = 'none');
             document.getElementById(id).style.display = 'block';
         }
-        showSection('about'); // default section
+        showSection('about');
     </script>
 </body>
 </html>
