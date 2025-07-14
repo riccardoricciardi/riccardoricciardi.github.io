@@ -27,40 +27,41 @@ nav {
 .nav-left, .nav-right {
     color: white;
     font-weight: 700;
-    font-size: 24px;
-    flex: 1;
+    font-size: 26px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .nav-left {
+    flex: 1;
     text-align: left;
 }
 
-.nav-center {
-    display: flex;
+.nav-right {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
     list-style: none;
+    display: flex;
     gap: 25px;
     margin: 0;
     padding: 0;
-    flex: 2;
     justify-content: center;
+    flex: 2;
 }
 
-.nav-center li {
-    color: white;
+nav ul li {
     cursor: pointer;
+    color: white;
     font-weight: 600;
     font-size: 18px;
     transition: opacity 0.3s;
 }
 
-.nav-center li:hover {
+nav ul li:hover {
     opacity: 0.7;
 }
-
-.nav-right {
-    text-align: right;
-}
-
 
 .content {
     display: none;
