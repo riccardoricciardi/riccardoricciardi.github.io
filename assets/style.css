@@ -45,3 +45,16 @@ nav {
 .nav-right {
     text-align: right;
 }
+
+.background {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    background-image: url('../assets/background_img.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15; /* rende il background più leggero */
+    z-index: -1; /* lo mette dietro i contenuti */
+}
