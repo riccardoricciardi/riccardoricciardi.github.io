@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riccardo Ricciardi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="background"></div>
+
+    <nav>
+        <ul>
+            <li onclick="showSection('about')">About & Contacts</li>
+            <li onclick="showSection('roles')">Roles</li>
+            <li onclick="showSection('projects')">Projects</li>
+            <li onclick="showSection('papers')">Selected Papers</li>
+            <li onclick="showSection('interests')">Personal Interests</li>
+        </ul>
+    </nav>
+
+    <section id="about" class="content">
+        <h1>Riccardo Ricciardi</h1>
+        <p>Researcher specializing in statistical modeling and NLP, from causal inference to deep learning.</p>
+        <p>📧 Email: your.email@example.com</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/riccardo-ricciardi/">LinkedIn</a></p>
+        <p>📄 <a href="CV scientifico professionale.pdf">Full Academic CV</a> | <a href="CV.pdf">Short CV</a></p>
+    </section>
+
+    <section id="roles" class="content">
+        <h2>Roles</h2>
+        <ul>
+            <li><strong>Postdoctoral Researcher</strong>, University X (2021–present)</li>
+            <li><strong>Visiting Researcher</strong>, Data Science Institute, LSE (2019)</li>
+            <li><strong>PhD Researcher</strong>, University Y (2018–2021)</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="content">
+        <h2>Projects</h2>
+        <table>
+            <tr><th>Activity</th><th>Institution</th><th>Objective</th><th>Outcome</th><th>Tools</th></tr>
+            <tr><td>Sentiment Analysis on Made in Italy Reviews</td><td>University X</td><td>Sentiment classifier with BERT</td><td>Scientific Reports paper</td><td>Python, BERT</td></tr>
+            <tr><td>Policy Impact Evaluation</td><td>University Y</td><td>Assess policy effects</td><td>Institution report</td><td>R, causal inference</td></tr>
+            <tr><td>Historical Text Correction</td><td>Library X</td><td>Correct OCR errors</td><td>Operational tool</td><td>BERT, edit distance</td></tr>
+            <tr><td>Value Detection in Reviews</td><td>University X</td><td>Identify product values</td><td>Few-shot pipeline</td><td>LLaMA, NLP</td></tr>
+        </table>
+    </section>
+
+    <section id="papers" class="content">
+        <h2>Selected Papers</h2>
+        <ul>
+            <li>“Paper Title 1”, <em>Journal Name</em>, Year. [DOI]</li>
+            <li>“Paper Title 2”, <em>Journal Name</em>, Year. [DOI]</li>
+            <li>“Paper Title 3”, <em>Conference</em>, Year. [Link]</li>
+        </ul>
+    </section>
+
+    <section id="interests" class="content">
+        <h2>Personal Interests</h2>
+        <ul>
+            <li>Classical Greek and Latin literature</li>
+            <li>Trail running</li>
+            <li>Wine culture and gastronomy</li>
+            <li>Public communication of data and AI</li>
+        </ul>
+    </section>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.content').forEach(section => section.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+        showSection('about'); // default section
+    </script>
+</body>
+</html>
